@@ -1,14 +1,9 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Home from "./Home.js";
+import Routes from "./components/navigation/Routes.js";
 
 function App() {
-  return (
-
-    <Home />
-  );
+  return <Routes />;
 }
-
 
 export default App;
