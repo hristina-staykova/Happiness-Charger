@@ -15,7 +15,9 @@ const useStyles = makeStyles({
 
 export default function CenteredTabs() {
     const classes = useStyles();
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = React.useState(2);
+
+    //we have to fix the navbar so when we click on the next tab it changes properly. Tony said he would help with this.
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
