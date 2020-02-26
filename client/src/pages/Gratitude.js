@@ -1,11 +1,52 @@
 import React from "react";
 import Textarea from "../components/presentation/Form.js";
+import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
 
 function Gratitude() {
   return (
     <>
-      <Textarea />
-      <h1>Gratitude</h1>
+      <Grid
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+        spacing={2}
+      >
+        <h2>What are you grateful for today?</h2>
+        <Grid item>
+          <Textarea />
+        </Grid>
+        <Grid item>
+          <Button variant="contained"> Save these blessings </Button>{" "}
+        </Grid>
+      </Grid>
+
+      <Grid
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+        spacing={2}
+      >
+        <Grid item> What made me happy ...</Grid>
+
+        <Grid item>
+          <Button variant="contained"> Yesterday </Button>
+        </Grid>
+
+        <Grid item>
+          <Button variant="contained"> A week ago </Button>
+        </Grid>
+
+        <Grid item>
+          <Button variant="contained"> A month ago </Button>
+        </Grid>
+
+        <Grid item>
+          <Button variant="contained"> Last year </Button>
+        </Grid>
+      </Grid>
     </>
   );
 }
