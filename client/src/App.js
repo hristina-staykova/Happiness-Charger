@@ -4,15 +4,12 @@ import "./App.css";
 import Home from "./pages/Home.js";
 import Gratitude from "./pages/Gratitude.js";
 import Inspiration from "./pages/Inspiration.js";
-import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-
 import CenteredTabs from "../src/components/Tabs";
 
 function App() {
   return (
-    <Grid container direction="column" justify="center" alignItems="center">
+    <Grid>
       <Router>
         <CenteredTabs />
         <Route exact path="/" component={Home} />
