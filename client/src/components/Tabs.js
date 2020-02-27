@@ -15,8 +15,6 @@ export default function CenteredTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  //we have to fix the navbar so when we click on the next tab it changes properly. Tony said he would help with this.
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -30,38 +28,36 @@ export default function CenteredTabs() {
         textColor="primary"
         centered
       >
-        <Tab label="Home">
-          <Link
-            to="/"
-            className={
-              window.location.pathname === "/" ? "nav-link active" : "nav-link"
-            }
-          />
-        </Tab>
+        <Link
+          to="/"
+          className={
+            window.location.pathname === "/" ? "nav-link active" : "nav-link"
+          }
+        >
+          <Tab label="Home" />
+        </Link>
 
-        <Tab label="Gratitude">
-          {" "}
-          <Link
-            to="/gratitude"
-            className={
-              window.location.pathname === "/gratitude"
-                ? "nav-link active"
-                : "nav-link"
-            }
-          />
-        </Tab>
+        <Link
+          to="/gratitude"
+          className={
+            window.location.pathname === "/gratitude"
+              ? "nav-link active"
+              : "nav-link"
+          }
+        >
+          <Tab label="Gratitude" />
+        </Link>
 
-        <Tab label="Inspiration">
-          {" "}
-          <Link
-            to="/inspiration"
-            className={
-              window.location.pathname === "/inspiration"
-                ? "nav-link active"
-                : "nav-link"
-            }
-          />
-        </Tab>
+        <Link
+          to="/inspiration"
+          className={
+            window.location.pathname === "/inspiration"
+              ? "nav-link active"
+              : "nav-link"
+          }
+        >
+          <Tab label="Inspiration" />
+        </Link>
       </Tabs>
     </Paper>
   );
