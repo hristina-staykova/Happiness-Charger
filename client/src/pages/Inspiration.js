@@ -2,22 +2,45 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
+import { Link } from "react-router-dom";
+
 
 const images = [
   {
-    url: "/static/images/grid-list/breakfast.jpg",
+    url: "Assets/health.jpg",
     title: "Health Recoveries",
-    width: "40%"
+    width: "40%",
+    link: '/items/health'
   },
   {
-    url: "/static/images/grid-list/burgers.jpg",
+    url: "Assets/TEDTalks.jpg",
     title: "Uplifting TED Talks",
-    width: "30%"
+    width: "30%",
+    link: '/items/ted-talks'
   },
   {
-    url: "/static/images/grid-list/camera.jpg",
+    url: "Assets/positiveparenting.jpg",
     title: "Positive Parenting",
-    width: "30%"
+    width: "30%",
+    link: '/items/parenting'
+  },
+  {
+    url: "Assets/awesomelove.jpg",
+    title: "Awesome Love Stories",
+    width: "30%",
+    link: '/awesomeLove'
+  },
+  {
+    url: "Assets/community.jpg",
+    title: "Community Development",
+    width: "30%",
+    link: '/community'
+  },
+  {
+    url: "Assets/nature.jpg",
+    title: "Thriving Nature",
+    width: "30%",
+    link: '/nature'
   }
 ];
 
@@ -99,9 +122,11 @@ export default function Inspiration() {
   const classes = useStyles();
 
   return (
+
     <div className={classes.root}>
       {images.map(image => (
         <ButtonBase
+          component={Link} to={image.link}
           focusRipple
           key={image.title}
           className={classes.image}
