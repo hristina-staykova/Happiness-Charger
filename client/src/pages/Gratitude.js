@@ -11,11 +11,7 @@ function Gratitude() {
         <Grid item>
           <Textarea />
         </Grid>
-        <Grid item>
-          <Button variant="contained"> Save these blessings </Button>{" "}
-        </Grid>
       </Grid>
-
       <Grid
         container
         direction="column"
