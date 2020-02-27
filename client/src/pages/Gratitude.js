@@ -6,14 +6,8 @@ import Grid from "@material-ui/core/Grid";
 function Gratitude() {
   return (
     <>
-      <Grid
-        container
-        direction="column"
-        justify="center"
-        alignItems="center"
-        spacing={2}
-      >
-        <h2>What are you grateful for today?</h2>
+      <Grid container direction="column" alignItems="center" spacing={2}>
+        <p>What are you grateful for today?</p>
         <Grid item>
           <Textarea />
         </Grid>
