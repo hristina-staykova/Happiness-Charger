@@ -7,6 +7,8 @@ import Inspiration from "./pages/Inspiration.js";
 import Grid from "@material-ui/core/Grid";
 import CenteredTabs from "../src/components/Tabs";
 
+import InspirationItem from "../src/pages/InspirationItem"
+
 function App() {
   return (
     <Grid>
@@ -15,6 +17,8 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/gratitude" component={Gratitude} />
         <Route exact path="/inspiration" component={Inspiration} />
+        <Route path="/items/:inspirationalItem" component={InspirationItem} />
+
       </Router>
     </Grid>
   );
