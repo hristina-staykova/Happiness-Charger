@@ -18,7 +18,6 @@ function App() {
         <Route exact path="/gratitude" component={Gratitude} />
         <Route exact path="/inspiration" component={Inspiration} />
         <Route path="/items/:inspirationalItem" component={InspirationItem} />
-
       </Router>
     </Grid>
   );

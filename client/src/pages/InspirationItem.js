@@ -1,5 +1,5 @@
 import React from "react";
-import MediaCard from "../components/presentation/Card.js";
+import MediaCard from "../components/presentation/CustomCard.js";
 import Grid from "@material-ui/core/Grid";
 
 function Health(props) {
@@ -58,6 +58,12 @@ function Health(props) {
 
             {positiveNews.length && positiveNews.map(item =>
                 <div>
+
+
+                    //put a card here
+
+
+
                     {item.title}
                     <br />
                     {item.text}
