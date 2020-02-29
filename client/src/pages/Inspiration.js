@@ -28,19 +28,19 @@ const images = [
     url: "Assets/awesomelove.jpg",
     title: "Awesome Love Stories",
     width: "30%",
-    link: '/awesomeLove'
+    link: '/items/awesomeLove'
   },
   {
     url: "Assets/community.jpg",
     title: "Community Development",
     width: "30%",
-    link: '/community'
+    link: '/items/community'
   },
   {
     url: "Assets/nature.jpg",
     title: "Thriving Nature",
     width: "30%",
-    link: '/nature'
+    link: '/items/nature'
   }
 ];
 

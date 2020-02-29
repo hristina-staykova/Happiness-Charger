@@ -20,7 +20,7 @@ export default function CenteredTabs() {
   };
 
   return (
-    <Paper className={classes.root}>
+    <Paper className={classes.root} >
       <Tabs
         value={value}
         onChange={handleChange}
@@ -33,6 +33,8 @@ export default function CenteredTabs() {
           className={
             window.location.pathname === "/" ? "nav-link active" : "nav-link"
           }
+          style={{ textDecoration: "none", color: "inherit", }}
+
         >
           <Tab label="Home" />
         </Link>
@@ -44,6 +46,7 @@ export default function CenteredTabs() {
               ? "nav-link active"
               : "nav-link"
           }
+          style={{ textDecoration: "none", color: "inherit", }}
         >
           <Tab label="Gratitude" />
         </Link>
@@ -55,10 +58,12 @@ export default function CenteredTabs() {
               ? "nav-link active"
               : "nav-link"
           }
+          style={{ textDecoration: "none", color: "inherit", }}
+
         >
           <Tab label="Inspiration" />
         </Link>
       </Tabs>
-    </Paper>
+    </Paper >
   );
 }
