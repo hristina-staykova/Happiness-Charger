@@ -39,60 +39,105 @@ function Health(props) {
             title = "Awesome health";
             positiveNews = [
                 {
-                    title: "Raising healthy children",
-                    text:
-                        "adsiads jjkadsj kl adjkld sjkljklas jklad sjk kja sfl hkgdshk lkjls dhklsdgh klkhds ghkld shkl"
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
                 },
                 {
-                    title: "Raising strong children",
-                    text: "asdasdasadsadsadsadsadsads"
-                }
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
+                {
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
             ];
             break;
 
         case "ted-talks":
             title = "Ted talks";
+            positiveNews = [
+                {
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
+                {
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
+                {
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
+            ];
+
             break;
-        case "love":
+
+
+
+        case "awesomeLove":
             title = "Awesome Love Stories";
             positiveNews = [
                 {
-                    title: "Awesome Love Stories",
-                    text:
-                        "adsiads jjkadsj kl adjkld sjkljklas jklad sjk kja sfl hkgdshk lkjls dhklsdgh klkhds ghkld shkl"
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
                 },
                 {
-                    title: "Raising strong children",
-                    text: "asdasdasadsadsadsadsadsads"
-                }
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
+                {
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
             ];
             break;
         case "community":
             title = "Community Development";
             positiveNews = [
                 {
-                    title: "Community Development",
-                    text:
-                        "adsiads jjkadsj kl adjkld sjkljklas jklad sjk kja sfl hkgdshk lkjls dhklsdgh klkhds ghkld shkl"
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
                 },
                 {
-                    title: "Raising strong children",
-                    text: "asdasdasadsadsadsadsadsads"
-                }
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
+                {
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
             ];
             break;
         case "nature":
             title = "Thriving Nature";
             positiveNews = [
                 {
-                    title: "Thriving Nature",
-                    text:
-                        "adsiads jjkadsj kl adjkld sjkljklas jklad sjk kja sfl hkgdshk lkjls dhklsdgh klkhds ghkld shkl"
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
                 },
                 {
-                    title: "Raising strong children",
-                    text: "asdasdasadsadsadsadsadsads"
-                }
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
+                {
+                    title: "Health Recoveries",
+                    text: "hehaj kddh asjh ads hjads hadsha dshj das",
+                    img: "https://yesomega.org/uploads/images/Blog-4-3.jpg"
+                },
             ];
             break;
         default:
