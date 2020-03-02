@@ -15,7 +15,7 @@ export default function CenteredTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (_, newValue) => {
     setValue(newValue);
   };
 
@@ -28,41 +28,9 @@ export default function CenteredTabs() {
         textColor="primary"
         centered
       >
-        <Link
-          to="/"
-          className={
-            window.location.pathname === "/" ? "nav-link active" : "nav-link"
-          }
-          style={{ textDecoration: "none", color: "inherit", }}
-
-        >
-          <Tab label="Home" />
-        </Link>
-
-        <Link
-          to="/gratitude"
-          className={
-            window.location.pathname === "/gratitude"
-              ? "nav-link active"
-              : "nav-link"
-          }
-          style={{ textDecoration: "none", color: "inherit", }}
-        >
-          <Tab label="Gratitude" />
-        </Link>
-
-        <Link
-          to="/inspiration"
-          className={
-            window.location.pathname === "/inspiration"
-              ? "nav-link active"
-              : "nav-link"
-          }
-          style={{ textDecoration: "none", color: "inherit", }}
-
-        >
-          <Tab label="Inspiration" />
-        </Link>
+        <Tab label="Home" to="/" component={Link} />
+        <Tab label="Gratitude" to='/gratitude' component={Link} />
+        <Tab label="Inspiration" to='/inspiration' component={Link} />
       </Tabs>
     </Paper >
   );

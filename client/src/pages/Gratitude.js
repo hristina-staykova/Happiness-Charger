@@ -1,11 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import styled from "styled-components";
 import {
   Card,
   ActivityTimeline,
-  TimelineMarker,
-  Textarea
+  TimelineMarker
 } from "react-rainbow-components";
 import Form from "../components/presentation/Form.js";
 
