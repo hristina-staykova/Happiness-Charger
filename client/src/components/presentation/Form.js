@@ -14,7 +14,7 @@ export default function BasicTextField() {
       <Textarea
         variant="outlined"
         multiline
-        rows="10"
+        rows={10}
         value={blessing}
         onChange={e => setBlessing(e.target.value)}
       />
