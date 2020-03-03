@@ -1,10 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import {
-  Card,
-  ActivityTimeline,
-  TimelineMarker
-} from "react-rainbow-components";
+import { ActivityTimeline, TimelineMarker } from "react-rainbow-components";
 import Form from "../components/presentation/Form.js";
 
 function Gratitude() {
