@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function MediaCard() {
+export default function MediaCard({ news }) {
   const classes = useStyles();
 
   return (
@@ -27,16 +27,15 @@ export default function MediaCard() {
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image="/static/images/cards/contemplative-reptile.jpg"
+            image={news.img}
             title="Contemplative Reptile"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+              {news.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              {news.text}
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -44,7 +43,9 @@ export default function MediaCard() {
           <Button size="small" color="primary">
             Share
           </Button>
-          <Button size="small" color="primary">
+          <Button size="small" style={{ display: "table-cell" }} href={news.link} target="_blank" color="primary">
+
+
             Read more
           </Button>
         </CardActions>
