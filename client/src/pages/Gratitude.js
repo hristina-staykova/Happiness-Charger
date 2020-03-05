@@ -25,22 +25,25 @@ function Gratitude() {
 
   const [pastBlessings, updateState] = useState(items);
   console.log(pastBlessings);
-  const displayBlessings = pastBlessings
-    .reverse()
-    .slice(0, 3)
-    .map((b, i) => (
-      <TimelineMarker
-        label={b.blessing}
-        icon={
-          <div>
-            <i class="fas fa-dove"></i>
-          </div>
-        }
-        datetime={b.date}
-        description="Great day"
-        key={i}
-      />
-    ));
+  const displayBlessings =
+    pastBlessings &&
+    pastBlessings.length &&
+    pastBlessings
+      .reverse()
+      .slice(0, 3)
+      .map((b, i) => (
+        <TimelineMarker
+          label={b.blessing}
+          icon={
+            <div>
+              <i class="fas fa-dove"></i>
+            </div>
+          }
+          datetime={b.date}
+          description="Great day"
+          key={i}
+        />
+      ));
 
   return (
     <div className={classes.root}>
