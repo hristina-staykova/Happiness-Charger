@@ -11,7 +11,7 @@ export default function Form({ updateState }) {
     console.log(newEntry.date);
     var items = [];
     try {
-      items = JSON.parse(localStorage.getItem("gratitude"));
+      items = JSON.parse(localStorage.getItem("gratitude")) || [];
     } catch (e) {
       console.error(e);
     }

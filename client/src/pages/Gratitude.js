@@ -25,7 +25,7 @@ function Gratitude() {
 
   const [pastBlessings, updateState] = useState(items);
   console.log(pastBlessings);
-  const displayBlessings = pastBlessings
+  const displayBlessings = pastBlessings && pastBlessings.length ? pastBlessings
     .reverse()
     .slice(0, 3)
     .map((b, i) => (
@@ -40,7 +40,7 @@ function Gratitude() {
         description="Great day"
         key={i}
       />
-    ));
+    )) : null;
 
   return (
     <div className={classes.root}>
