@@ -31,7 +31,7 @@ function Home() {
         justify="center"
         alignItems="center"
         spacing={2}>
-        <h1 style={{ textAlign: "center" }}>Oh, Happy Day...</h1>
+        <h1>Oh, Happy Day...</h1>
         {homeNews.map(newsItem => <MediaCard news={newsItem} />)}
       </Grid>
     </Container>
