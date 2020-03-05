@@ -28,6 +28,7 @@ export default function Form({ updateState }) {
       autoComplete="off"
       onSubmit={handleSubmit}
       id="gratitudeForm"
+      style={{ textAlign: "center" }}
     >
       <Textarea
         variant="outlined"
@@ -37,8 +38,8 @@ export default function Form({ updateState }) {
         onChange={e => setBlessing(e.target.value)}
       />
       <br></br>
-      <Button
-        type="submit"
+
+      <Button type="submit"
         label="Save blessings"
         variant="success"
         className="rainbow-m-around_medium"

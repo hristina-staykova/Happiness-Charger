@@ -3,6 +3,8 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import { ActivityTimeline, TimelineMarker } from "react-rainbow-components";
 import Form from "../components/presentation/Form.js";
+import Container from "@material-ui/core/Container";
+
 
 const useStyles = makeStyles({
   root: {
@@ -45,35 +47,37 @@ function Gratitude() {
   return (
     <div className={classes.root}>
       <br></br>
-      <Grid
-        container
-        direction="column"
-        justify="center"
-        alignItems="center"
-        spacing={2}
-      >
-        <Grid item>What are you grateful for today?</Grid>
-      </Grid>
-      <Grid item>
-        <Form updateState={updateState} />
-      </Grid>
-      <Grid
-        container
-        direction="column"
-        justify="center"
-        alignItems="center"
-        spacing={2}
-      >
-        <Grid item> What made me happy ...</Grid>
-      </Grid>
-      <br></br>
-      <div
-        className="rainbow-m-around_xx-large"
-        style={{ marginLeft: "-38px", marginRight: "10px" }}
-      >
-        <ActivityTimeline>{displayBlessings}</ActivityTimeline>
-      </div>
-    </div>
+      <Container maxWidth="sm">
+
+        <Grid container
+          direction="column"
+          justify="center"
+          alignItems="center"
+          spacing={2}>
+
+          <Grid item> <h1 style={{ textAlign: "center" }}>What are you grateful for today?</h1></Grid>
+        </Grid>
+        <Grid item>
+          <Form updateState={updateState} />
+        </Grid>
+        <Grid
+          container
+          direction="column"
+          justify="center"
+          alignItems="center"
+          spacing={2}
+        >
+          <Grid item><h3 style={{ textAlign: "center" }}> What made me happy...</h3></Grid>
+        </Grid>
+        <br></br>
+        <div
+          className="rainbow-m-around_xx-large"
+          style={{ marginLeft: "-38px", marginRight: "10px" }}
+        >
+          <ActivityTimeline>{displayBlessings}</ActivityTimeline>
+        </div>
+      </Container>
+    </div >
   );
 }
 
