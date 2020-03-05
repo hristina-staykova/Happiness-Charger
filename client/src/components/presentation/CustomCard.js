@@ -43,9 +43,13 @@ export default function MediaCard({ news }) {
           <Button size="small" color="primary">
             Share
           </Button>
-          <Button size="small" style={{ display: "table-cell" }} href={news.link} target="_blank" color="primary">
-
-
+          <Button
+            size="small"
+            style={{ display: "table-cell" }}
+            href={news.link}
+            target="_blank"
+            color="primary"
+          >
             Read more
           </Button>
         </CardActions>
