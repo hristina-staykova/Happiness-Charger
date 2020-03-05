@@ -79,7 +79,7 @@ function Health(props) {
                     link: "https://www.youtube.com/watch?v=NgFczqJuklg"
                 },
                 {
-                    title: "Health Recoveries",
+                    title: "Growth Mindset",
                     text: "Carol Dweck researches “growth mindset” — the idea that we can grow our brain's capacity to learn and to solve problems. In this talk, she describes two ways to think about a problem that’s slightly too hard for you to solve. Are you not smart enough to solve it … or have you just not solved it yet?",
                     img: "https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/85582d553035da22504c315ba5ec7ed727f16354_2880x1620.jpg?quality=89&w=600",
                     link: "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve"
@@ -171,7 +171,7 @@ function Health(props) {
                 alignItems="center"
                 spacing={2}
             >
-                <h1 style={{ textTransform: 'capitalize' }}>{title}</h1>
+                <h1 style={{ textTransform: 'capitalize', textAlign: "center" }}>{title}</h1>
 
                 {positiveNews.length && positiveNews.map(item =>
                     <MediaCard news={item} />

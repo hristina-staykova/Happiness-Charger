@@ -1,6 +1,7 @@
 import React from "react";
 import MediaCard from "../components/presentation/CustomCard.js";
 import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
 
 function Home() {
   const homeNews = [{
@@ -23,10 +24,17 @@ function Home() {
   }
   ]
   return (
-    <Grid container direction="column" alignItems="center" spacing={2}>
-      <h1>Oh, Happy Day...</h1>
-      {homeNews.map(newsItem => <MediaCard news={newsItem} />)}
-    </Grid>
+    <Container maxWidth="sm">
+
+      <Grid container
+        direction="column"
+        justify="center"
+        alignItems="center"
+        spacing={2}>
+        <h1 style={{ textAlign: "center" }}>Oh, Happy Day...</h1>
+        {homeNews.map(newsItem => <MediaCard news={newsItem} />)}
+      </Grid>
+    </Container>
   );
 }
 
