@@ -4,8 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 
 function Health(props) {
-  console.log(props);
-
   let title,
     positiveNews = [];
 
@@ -112,22 +110,28 @@ function Health(props) {
       title = "Awesome Love Stories";
       positiveNews = [
         {
-          title: "Health Recoveries",
-          text: "hehaj kddh asjh ads hjads hadsha dshj das",
-          img: "https://yesomega.org/uploads/images/Blog-4-3.jpg",
-          link: "https://google.com"
+          title: "10 real-life love stories that’ll grab you by the heart",
+          text:
+            "Inside a StoryCorps recording booth, everyday people can sit down to interview someone who matters to them. Almost all of these interviews touch on the great themes of human existence — and there’s no question that the greatest of these themes is love.",
+          img: "https://tedideas.files.wordpress.com/2015/02/storyc-image.jpg",
+          link:
+            "https://ideas.ted.com/10-real-life-love-stories-thatll-grab-you-by-the-heart-from-storycorps/"
         },
         {
-          title: "Health Recoveries",
-          text: "hehaj kddh asjh ads hjads hadsha dshj das",
-          img: "https://yesomega.org/uploads/images/Blog-4-3.jpg",
-          link: "https://google.com"
+          title: "How a data driven woman hacked online dating",
+          text:
+            "Amy Webb was having no luck with online dating. The dates she liked didn't write her back, and her own profile attracted crickets (and worse). So, as any fan of data would do: she started making a spreadsheet. Hear the story of how she went on to hack her online dating life - with frustrating, funny and life-changing results.",
+          img:
+            "https://s3.amazonaws.com/talkstar-photos/uploads/0edb43be-7d5d-4ad5-b6e1-d5fe9ea7e800/AmyWebb_2013S-embed.jpg",
+          link: "https://www.ted.com/talks/amy_webb_how_i_hacked_online_dating"
         },
         {
-          title: "Health Recoveries",
-          text: "hehaj kddh asjh ads hjads hadsha dshj das",
-          img: "https://yesomega.org/uploads/images/Blog-4-3.jpg",
-          link: "https://google.com"
+          title: "The brain in Love",
+          text:
+            "Why do we crave love so much, even to the point that we would die for it? To learn more about our very real, very physical need for romantic love, Helen Fisher and her research team took MRIs of people in love -- and people who had just been dumped.",
+          img:
+            "https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/dfda28474d713d1de50dd1cc5f67c299c8b6eb80_2880x1620.jpg?quality=89&w=320",
+          link: "https://www.ted.com/talks/helen_fisher_the_brain_in_love"
         }
       ];
       break;
@@ -167,22 +171,32 @@ function Health(props) {
       title = "Thriving Nature";
       positiveNews = [
         {
-          title: "Health Recoveries",
-          text: "hehaj kddh asjh ads hjads hadsha dshj das",
-          img: "https://yesomega.org/uploads/images/Blog-4-3.jpg",
-          link: "https://google.com"
+          title: "1 billion trees planted in Pakistan",
+          text:
+            "As trees absorb carbon dioxide – a major greenhouse gas – from the atmosphere, it is hoped that the project will also help to slow down climate change. ",
+          img:
+            "https://www.organicconsumers.org/sites/default/files/styles/400x300/public/treesbillion.png?itok=eJGgR8Z2",
+          link:
+            "https://www.positive.news/environment/1bn-trees-planted-pakistan-bid-slow-effects-climate-change/"
         },
         {
-          title: "Health Recoveries",
-          text: "hehaj kddh asjh ads hjads hadsha dshj das",
-          img: "https://yesomega.org/uploads/images/Blog-4-3.jpg",
-          link: "https://google.com"
+          title: "Climate education added to national curriculum in Italy",
+          text:
+            "Public schools in Italy required to offer one hour of climate-related lessons per week. The move, which will come into effect in September, makes Italy the world’s first country to introduce mandatory climate education in state schools. Subjects such as physics and geography will also be taught from a sustainability angle.",
+          img:
+            "https://www.positive.news/wp-content/uploads/2020/02/Italy-740x492-c-center.jpg",
+          link:
+            "https://www.positive.news/society/education/climate-education-added-to-national-curriculum-in-italy/"
         },
         {
-          title: "Health Recoveries",
-          text: "hehaj kddh asjh ads hjads hadsha dshj das",
-          img: "https://yesomega.org/uploads/images/Blog-4-3.jpg",
-          link: "https://google.com"
+          title:
+            "Bacteria That Gobbles Up Pollutants Could Have a ‘Big Impact on Climate Change’",
+          text:
+            "Researchers from Cornell University have found a new species of soil bacteria that is particularly adept at breaking down organic matter—including the cancer-causing chemicals that are released when coal, gas, oil and refuse are burned.",
+          img:
+            "https://www.goodnewsnetwork.org/wp-content/uploads/2020/02/David-Karasz-in-Laboratory-Allison-UsavageCornell-University-Released-300x300.jpg",
+          link:
+            "https://www.goodnewsnetwork.org/newly-discovered-bacteria-eats-pollutants-and-fights-climate-change/"
         }
       ];
       break;
