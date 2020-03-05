@@ -3,11 +3,6 @@ import MediaCard from "../components/presentation/CustomCard.js";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 
-
-
-import { Card } from 'react-rainbow-components';
-
-
 function Health(props) {
     console.log(props);
 

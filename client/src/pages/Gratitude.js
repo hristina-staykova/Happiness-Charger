@@ -1,15 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
-import {
-  Card,
-  ActivityTimeline,
-  TimelineMarker
-} from "react-rainbow-components";
+import { makeStyles } from "@material-ui/core/styles";
+import { ActivityTimeline, TimelineMarker } from "react-rainbow-components";
 import Form from "../components/presentation/Form.js";
 
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 345,
+    margin: "auto"
+  },
+  media: {
+    height: 140
+  }
+});
+
 function Gratitude() {
+  const classes = useStyles();
+  var items = [];
+  try {
+    items = JSON.parse(localStorage.getItem("gratitude"));
+  } catch (e) {
+    console.error(e);
+  }
+
+  const [pastBlessings, updateState] = useState(items);
+  console.log(pastBlessings);
+  const displayBlessings = pastBlessings && pastBlessings.length ? pastBlessings
+    .reverse()
+    .slice(0, 3)
+    .map((b, i) => (
+      <TimelineMarker
+        label={b.blessing}
+        icon={
+          <div>
+            <i class="fas fa-dove"></i>
+          </div>
+        }
+        datetime={b.date}
+        description="Great day"
+        key={i}
+      />
+    )) : null;
+
   return (
-    <>
+    <div className={classes.root}>
       <br></br>
       <Grid
         container
@@ -21,7 +55,7 @@ function Gratitude() {
         <Grid item>What are you grateful for today?</Grid>
       </Grid>
       <Grid item>
-        <Form />
+        <Form updateState={updateState} />
       </Grid>
       <Grid
         container
@@ -33,33 +67,13 @@ function Gratitude() {
         <Grid item> What made me happy ...</Grid>
       </Grid>
       <br></br>
-
       <div
         className="rainbow-m-around_xx-large"
         style={{ marginLeft: "-38px", marginRight: "10px" }}
       >
-        <ActivityTimeline>
-          <TimelineMarker
-            label="User Sign Up."
-            icon={<div></div>}
-            datetime="Yesterday"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore etdolore magna aliqua."
-          />
-          <TimelineMarker
-            label="User phone verified."
-            icon={<div></div>}
-            datetime="Today"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          />
-          <TimelineMarker
-            label="User first post."
-            icon={<div></div>}
-            datetime="3 hours ago"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore etdolore magna aliqua."
-          ></TimelineMarker>
-        </ActivityTimeline>
+        <ActivityTimeline>{displayBlessings}</ActivityTimeline>
       </div>
-    </>
+    </div>
   );
 }
 
