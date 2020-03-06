@@ -39,10 +39,11 @@ export default function Form({ updateState }) {
       />
       <br></br>
 
-      <Button type="submit"
+      <Button style={{ backgroundcolor: "white" }} type="submit"
         label="Save blessings"
         variant="success"
         className="rainbow-m-around_medium"
+
       />
     </form>
   );
