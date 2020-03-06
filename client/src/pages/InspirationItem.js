@@ -11,7 +11,7 @@ function Health(props) {
 
     switch (props.match.params.inspirationalItem) {
         case "parenting":
-            title = "Awesome parents";
+            title = "Positive Education";
             positiveNews = [
                 {
                     title: "Raising brave children",
