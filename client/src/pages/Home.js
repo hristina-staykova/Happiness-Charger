@@ -6,7 +6,7 @@ import Container from "@material-ui/core/Container";
 function Home() {
   const homeNews = [{
     title: "Prioritising Nature",
-    text: "New Zealand to consider climate in all policy decisions.",
+    text: "New Zealand to consider climate in all policy decisions. Other recent pledges made by the New Zealand government include a commitment to plant 1bn trees by 2028.",
     img: "https://www.positive.news/wp-content/uploads/2020/02/New-Zealand-climate-1800x0-c-center.jpg",
     link: "https://www.positive.news/environment/new-zealand-to-consider-climate-in-all-policy-decisions/"
   },
@@ -18,7 +18,7 @@ function Home() {
   },
   {
     title: "Neurodiversity: Beautiful Minds",
-    text: "Rather than simply accepting people with neurodiverse conditions like autism or dyslexia, what if we recognised their hidden talents? Four neurodiverse people explain how the way their brains work has been key to their success",
+    text: "Rather than simply accepting people with neurodiverse conditions like autism or dyslexia, what if we recognised their hidden talents? Four neurodiverse people explain how the way their brains work has been key to their success.",
     img: "https://www.positive.news/wp-content/uploads/2020/02/Alice-3-740x492-c-center.jpg",
     link: "https://www.positive.news/lifestyle/body-mind/beautiful-minds-uncovering-the-hidden-talents-in-neurodiversity/"
   }

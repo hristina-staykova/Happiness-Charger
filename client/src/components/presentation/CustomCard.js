@@ -23,14 +23,14 @@ export default function MediaCard({ news }) {
 
   return (
     <Grid item>
-      <Card className={classes.root}>
-        <CardActionArea>
+      <Card className={classes.root} >
+        <CardActionArea >
           <CardMedia
             className={classes.media}
             image={news.img}
             title="Contemplative Reptile"
           />
-          <CardContent>
+          <CardContent style={{ color: "#FFA384" }}>
             <Typography gutterBottom variant="h5" component="h2">
               {news.title}
             </Typography>

@@ -39,7 +39,7 @@ function Gratitude() {
           </div>
         }
         datetime={b.date}
-        description="Great day"
+        description="There is always something to be grateful for"
         key={i}
       />
     )) : null;
@@ -55,7 +55,7 @@ function Gratitude() {
           alignItems="center"
           spacing={2}>
 
-          <Grid item> <h1 style={{ textAlign: "center" }}>What are you grateful for today?</h1></Grid>
+          <Grid item> <h1 style={{ textAlign: "center", marginBottom: "30px", marginTop: "20px" }}>What are you grateful for today?</h1></Grid>
         </Grid>
         <Grid item>
           <Form updateState={updateState} />
